@@ -5,8 +5,6 @@
     let page = '_mwapp'
     import svelteLogo from '../assets/svelte.svg'
     import mwappLogo from '../assets/mwapp.svg'
-    import Button from './Button.svelte'
-    import Counter from './Counter.svelte'
   </script>
   
   <main>

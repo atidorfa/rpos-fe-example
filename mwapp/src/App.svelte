@@ -1,20 +1,19 @@
 <script>
-  import Button from "./lib/Button.svelte";
   import Index from "./lib/_index.svelte";
   import Mwapp from "./lib/_mwapp.svelte"
+  import Blank from "./lib/_blank.svelte"
+  import Tabs from "./lib/components/Tabs.svelte"
 
-  // render
+  // pages
   let pages = ['_index', '_mwapp']
   let activePage = '_index'
 
-  const pageChange = (e) => {
-    activePage = '_mwapp'
-	}
+  // tabs
+	let tabs = ['HOME', 'SALE SCREEN', 'DRIVE THRU-ORDERS', 'FIRE ORDERS', 'KIOSK ORDERS', 'PAYMENT'];
+	let activeTab = 'HOME';
 
-  function handleClick() {
-    console.log(activePage)
-		activePage = '_mwapp'
-    console.log(activePage)
+	const tabChange = (e) => {
+		activeTab = e.detail;
 	}
 </script>
 
@@ -25,7 +24,12 @@
   Go to mwapp
 </button>
 {:else if activePage === '_mwapp'}
-  <Mwapp />
+  <Tabs {tabs} {activeTab} on:tabChange={tabChange}/>
+  {#if activeTab === 'HOME'}
+    <Mwapp />
+  {:else}
+		<Blank />
+  {/if}
 {/if}
 
 </main>

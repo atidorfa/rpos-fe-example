@@ -2,7 +2,7 @@
 </script>
 <main>
     <h1>
-        <img src="/img/bk_logo.png" alt="bk logo">
+        <img src="/img/uc_logo.png" alt="uc logo">
     </h1>
     <button>
         CLOCK IN / OUT
@@ -22,9 +22,9 @@
 </main>
 
 <style>
-    button {
-      margin-top: 4em;
-      color: white;
-      background-color: #262626;
-    }
+  button {
+    margin-top: 4em;
+    color: rgba(255, 255, 255, 0);
+    background-color: #ffffff;
+  }
 </style>
