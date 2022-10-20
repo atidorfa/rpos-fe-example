@@ -22,14 +22,10 @@
       </a>
     </div>
     <h1>Vite + Svelte + mwapp</h1>
-
-    <Button />
-
     <!-- <div class="card">
       <Counter />
     </div> -->
-    <br>
-    <br>
+
     <p>
       Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank">SvelteKit</a>, the official Svelte app framework powered by Vite!
     </p>

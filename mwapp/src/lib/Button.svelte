@@ -1,9 +1,15 @@
 <script>
-	function handleClick() {
-		alert('clicked')
-	}
+
 </script>
 
 <button>
-	Go to mwapp
+    Button
 </button>
+
+<style>
+  button {
+    margin-top: 4em;
+    color: white;
+    background-color: #262626;
+  }
+</style>
