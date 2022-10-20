@@ -1,6 +1,7 @@
 <script>
   import Index from "./lib/_index.svelte";
   import Mwapp from "./lib/_mwapp.svelte"
+  import Ucontruction from "./lib/_uc.svelte"
   import Blank from "./lib/_blank.svelte"
   import Tabs from "./lib/components/Tabs.svelte"
 
@@ -27,6 +28,8 @@
   <Tabs {tabs} {activeTab} on:tabChange={tabChange}/>
   {#if activeTab === 'HOME'}
     <Mwapp />
+  {:else if activeTab === 'SALE SCREEN'}
+    <Ucontruction />
   {:else}
 		<Blank />
   {/if}

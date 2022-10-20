@@ -2,7 +2,7 @@
 </script>
 <main>
     <h1>
-        <img src="/img/white_logo.png" alt="uc logo">
+        <img src="/img/uc_logo.png" alt="uc logo">
     </h1>
     <button>
         CLOCK IN / OUT
